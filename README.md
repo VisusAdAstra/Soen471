@@ -11,7 +11,7 @@ Required pakages:
 - Python version 3.6+
 - `numpy` version 2.0 or later: https://www.numpy.org/
 - `scikit-learn` version 0.23 or later: https://scikit-learn.org
-- `seaborn` version 0.11 or later: https://seaborn.pydata.org/
+- `spark` version 3.1.1 or later: https://spark.apache.org/
 ...
 
 ## Usage
