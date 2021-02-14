@@ -16,11 +16,36 @@ Our goal is to predict when different components of CNC machines will fail. We u
 
 * <b>Apache Spark/PySpark: </b> 3.0.0+ - It is a unified analytics engine for large-scale data processing. We will use Dataframe API and Resilient Distributed Dataset (RDD) for data processing and parallelization.
 * <b>Pandas: </b> 1.2.0+ - We will use Pandas for data manipulation, analysis, sorting, handling missing values, cleaning, and visualization.
-* <b>Scikit-Learn: </b> 0.24.1+ Software machine learning library for the Python programming language. We will use it for data analysis and utilize isolation forest from its sklearn.ensemble module.
 * <b>PySpark ML: </b> It is DataFrame-based machine learning APIs to let users quickly assemble and configure practical machine learning pipelines.
-* <b>Python/Pytest: </b> 3.6+ - Programming language and test framework.
+* <b>Scikit-Learn: </b> 0.24.1+ Software machine learning library for the Python programming language. We will use it for data analysis and utilize isolation forest from its sklearn.ensemble module.
+* <b>XGBoost: </b> 1.3.3+ - eXtreme Gradient Boosting, provides a parallel tree boosting (also known as GBDT, GBM). XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable.
 
 ### Algorithms
+Traditionally, we make use of Decision Tree, Random Forest and GBT Classifier which are native tools of PySpark ML library. However, due to many article about their limitation, we will also experiment Python native library XGBoost: XGB Classifier and Isolation Forest Classifier from Scikit-Learn to retrieve the best training scenario.
+
+* <b>Feature Engineering:</b> Perform rolling computation for various features, create time windows and aggregate statistics.
+
+  * <b>Lag features: </b> divide the duration of data collection into time units where each record belongs to a single point in time for each asset. Once we set the frequency of observations, we want to look for trends within measures, over time/rolling windows in order to predict performance degradation. We create features for these trends within each record using time lags over previous observations to check for these performance changes. 
+  
+       <p align="center"><img src="https://github.com/VisusAdAstra/Soen471/edit/master/images/lag1.png" width="500"></p>
+
+       <p align="center"><img src="https://github.com/VisusAdAstra/Soen471/edit/master/images/lag2.png" width="500"></p>
+  
+  * <b>Label construction: </b> label all observation cycles within the failure warning window as failed. The prediction problem then becomes estimating the probability of failure within this window.
+
+* <b>Model Training:</b> We have implemented the below given algorithm for Content-based filtering. In this algorithm, we will use item metadata such as Locality, Category, Rating, etc. for restaurants to make recommendations. Here we have solely relied on item data rather than other user's metadata.
+
+  * <b>Random Forest Classifier: </b> .
+  
+  * <b>GBT Classifier: </b> .
+  
+  * <b>Isolation Forest Classifier: </b> .
+  
+  * <b>XGBClassifier: </b> .
+
+* <b>Evaluation:</b> Hyper-Parameter Tuning & Cross Validation.
+
+* <b>Streaming:</b> Apache Spark Streaming.
 
 ## Installation 
 Required pakages:
