@@ -43,9 +43,9 @@ Traditionally, we make use of Decision Tree, Random Forest and GBT Classifier wh
 
   * <b>Lag features: </b> divide the duration of data collection into time units where each record belongs to a single point in time for each asset. Once we set the frequency of observations, we want to look for trends within measures, over time/rolling windows in order to predict performance degradation. We create features for these trends within each record using time lags over previous observations to check for these performance changes. 
   
-       <p align="center"><img src="https://github.com/VisusAdAstra/Soen471/master/images/window1.png" width="500"></p>
+       <p align="center"><img src="https://github.com/VisusAdAstra/Soen471/blob/master/images/window1.png" width="500"></p>
 
-       <p align="center"><img src="https://github.com/VisusAdAstra/Soen471/master/images/window2.png" width="500"></p>
+       <p align="center"><img src="https://github.com/VisusAdAstra/Soen471/blob/master/images/window2.png" width="500"></p>
   
   * <b>Label construction: </b> label all observation cycles within the failure warning window as failed. The prediction problem then becomes estimating the probability of failure within this window.
 
