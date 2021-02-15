@@ -14,7 +14,7 @@ Machines needs regular servicing and maintenance. In a manufacturing factory, we
 
 Our objective is to be able to predict which machine will fail and when will it fail. We plan to use various machine learning algorithms to achieve the best results. To get a better grasp of the data, we will first perform an Explorary Data Analysis to have an idea of the data’s balance. It might be helpful to find out what are the most determining factors in our tasks. The presentation of the problem is a time series one. We will train on the least recent data and will test on the most recent data. 
 
-Our success criteria would be to achieve a high predictive rate of 90% and to have discovered meaningful properties on the machines during EDA. Related work has been done by the Sogeti team on GitHub with R. They created the predictive model later hosted it in Azure Cloud. More information on their work can be found here, which includes a presentation on the data.
+Our success criteria would be to achieve a high predictive rate of 90% and to have discovered meaningful properties on the machines during EDA. Related work has been done by the Sogeti team on GitHub with R. They created the predictive model later hosted it in Azure Cloud. More information on their work can be found [here](https://github.com/DeeptiChevvuri/Predictive-Maintenance-Modelling-Datasets), which includes a presentation on the data.
 
 ## II. Materials and Methods
 
