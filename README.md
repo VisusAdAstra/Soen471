@@ -6,7 +6,7 @@ Predictive Maintenance: Failure Prediction
 
 ## Abstract
 
-Our goal is to predict when different components of CNC machines will fail. We use time-series telemetry data obtained from sensors which include failure history, maintenance history, machine conditions and features such as the machine’s age and model. The dataset was published on [GitHub](https://github.com/DeeptiChevvuri/Predictive-Maintenance-Modelling-Datasets) in 2018. It is around 77 Mb with 876100 samples of telemetry values for 100 machines for 1 year on an hourly basis. We will perform EDA and feature engineering to eventually implement 3 algorithms: decision trees, random forests and GBTClassifier. We will then evaluate the results based on different metrics such as accuracy, recall and F1 scores.
+Our goal is to predict when different components of CNC machines will fail. We use time-series telemetry data obtained from sensors which include failure history, maintenance history, machine conditions and features such as the machine’s age and model. The dataset was published on [GitHub](https://github.com/DeeptiChevvuri/Predictive-Maintenance-Modelling-Datasets) in 2018 with 5 csv files and is around 77 Mb. We will perform EDA and feature engineering to eventually implement 3 algorithms: decision trees, random forests and GBTClassifier. We will then evaluate the results based on different metrics such as accuracy, recall and F1 scores.
 
 ## I. Introduction
 
@@ -20,7 +20,7 @@ Our success criteria would be to achieve a high predictive rate of 90% and to ha
 
 ### Datasets
 
-The dataset includes 5 files: errors.csv, failures.csv, machines.csv, maint.csv and telemetry.csv. All of the files include a datetime and machine ID column except machines.csv which does not have datetime. Individually,
+The dataset is around 77 Mb with 876100 samples of telemetry values for 100 machines for 1 year on an hourly basis. It includes 5 files: errors.csv, failures.csv, machines.csv, maint.csv and telemetry.csv. All of the files include a datetime and machine ID column except machines.csv which does not have datetime. Individually,
 
 1. errors.csv contains the error ID
 2. failures.csv contains the component failing
