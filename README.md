@@ -49,19 +49,19 @@ Traditionally, we make use of Decision Tree, Random Forest and GBT Classifier wh
   
   * <b>Label construction: </b> Label all observation cycles within the failure warning window as failed. The prediction problem then becomes estimating the probability of failure within this window.
 
-* <b>Model Training:</b> We have implemented the below given algorithm for Content-based filtering. In this algorithm, we will use item metadata such as Locality, Category, Rating, etc. for restaurants to make recommendations. Here we have solely relied on item data rather than other user's metadata.
+* <b>Model Training:</b> The purpose is to predict maintenance within the next N cycles and the failure type. Decision Trees are among the most popular and versatile classification methods, used typically for this kind of tasks. Predictive analytics algorithms try to achieve the lowest error possible by either using “boosting” or “bagging”.
 
-  * <b>Random Forest Classifier: </b> .
+  * <b>Random Forest Classifier: </b> Random Forest uses bagging mechanism.The individual decision tree might be “weak learners,” multiple trees reduce the variance and bias of a smaller set or single tree.
   
-  * <b>GBT Classifier: </b> .
+  * <b>GBT Classifier: </b> The Gradient Boosted Model produces a prediction model composed of an ensemble of decision trees. Each new tree helps to correct errors made by the previously trained tree.
   
-  * <b>Isolation Forest Classifier: </b> .
+  * <b>Isolation Forest Classifier: </b> Isolation Forest is similar in principle to Random Forest, however, identifies anomalies or outliers rather than profiling normal data points. The idea being that isolated observations, or anomalies, are easier to isolate because there are fewer conditions necessary to distinguish them from the normal cases.
   
-  * <b>XGBClassifier: </b> .
+  * <b>XGBClassifier: </b> Xgboost does regularization of the tree as well to avoid overfitting and deals with the missing values efficiently. Xgboost implementation enhances various parts make a big difference in performance speed, memory efficience and parallelization.
 
-* <b>Evaluation:</b> Hyper-Parameter Tuning & Cross Validation.
+* <b>Evaluation:</b> Confusion matrix, precision, recall and F1 score. Enhancement is conducted by Hyper-Parameter Tuning & Cross Validation.
 
-* <b>Streaming:</b> Apache Spark Streaming.
+* <b>Streaming:</b> Apache Spark Streaming enables scalable, high-throughput, fault-tolerant stream processing of live data streams, creating self-updated model.
 
 ## Installation 
 Required pakages:
