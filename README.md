@@ -34,7 +34,7 @@ The dataset is around 77 Mb with 876100 samples of telemetry values for 100 mach
 * <b>Pandas: </b> 1.2.0+ - We will use Pandas for data manipulation, analysis, sorting, handling missing values, cleaning, and visualization.
 * <b>PySpark ML: </b> It is DataFrame-based machine learning APIs to let users quickly assemble and configure practical machine learning pipelines.
 * <b>Scikit-Learn: </b> 0.24.1+ - Machine learning library for the Python programming language. We will use it for data analysis and utilize isolation forest from its sklearn.ensemble module.
-* <b>XGBoost: </b> 1.3.3+ - eXtreme Gradient Boosting, provides a parallel tree boosting (also known as GBDT, GBM). XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable.
+* <b>XGBoost: </b> 1.3.3+ - eXtreme Gradient Boosting, provides a parallel tree boosting (also known as GBDT, GBM). XGBoost is an optimized distributed gradient boosting library designed to be highly memory-efficient, flexible and portable.
 
 ### Algorithms
 Traditionally, we make use of Decision Tree, Random Forest and GBT Classifier which are native tools of PySpark ML library. However, due to many articles about their limitation, we will also experiment Python native library XGBoost: XGB Classifier and Isolation Forest Classifier from Scikit-Learn to retrieve the best training scenario.
@@ -57,7 +57,7 @@ Traditionally, we make use of Decision Tree, Random Forest and GBT Classifier wh
   
   * <b>Isolation Forest Classifier: </b> Isolation Forest is similar in principle to Random Forest, however, identifies anomalies or outliers rather than profiling normal data points. The idea being that isolated observations, or anomalies, are easier to isolate because there are fewer conditions necessary to distinguish them from the normal cases.
   
-  * <b>XGBClassifier: </b> Xgboost does regularization of the tree as well to avoid overfitting and deals with the missing values efficiently. Xgboost implementation enhances various parts make a big difference in performance speed, memory efficience and parallelization.
+  * <b>XGBClassifier: </b> Xgboost utilize Column Subsampling to avoid overfitting and deals with the missing values efficiently thanks to Sparsity-aware Split Finding. XGBoost performs high speed tree boosting operations by establishing Regularized Learning Objective and using a Shrinkage Factor, which decreases the effect of each tree and leaves space for future trees’ impact on model performance.
 
 * <b>Evaluation:</b> Confusion matrix, precision, recall and F1 score. Enhancement is conducted by Hyper-Parameter Tuning & Cross Validation.
 
