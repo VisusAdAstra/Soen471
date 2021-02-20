@@ -57,7 +57,7 @@ Traditionally, we make use of Decision Tree, Random Forest and GBT Classifier wh
   
   * <b>Isolation Forest Classifier: </b> Isolation Forest is similar in principle to Random Forest, however, identifies anomalies or outliers rather than profiling normal data points. The idea being that isolated observations, or anomalies, are easier to isolate because there are fewer conditions necessary to distinguish them from the normal cases.
   
-  * <b>XGBClassifier: </b> Xgboost utilize Column Subsampling to avoid overfitting and deals with the missing values efficiently thanks to Sparsity-aware Split Finding. XGBoost performs high speed tree boosting operations by establishing Regularized Learning Objective and using a Shrinkage Factor, which decreases the effect of each tree and leaves space for future trees’ impact on model performance.
+  * <b>XGBClassifier: </b> Xgboost utilizes Column Subsampling to avoid overfitting and deals with the missing values efficiently thanks to Sparsity-aware Split Finding. XGBoost performs high speed tree boosting operations by establishing Regularized Learning Objective and using a Shrinkage Factor, which decreases the effect of each tree and leaves space for future trees’ impact on model performance.
 
 * <b>Evaluation:</b> Confusion matrix, precision, recall and F1 score. Enhancement is conducted by Hyper-Parameter Tuning & Cross Validation.
 
@@ -67,7 +67,7 @@ Traditionally, we make use of Decision Tree, Random Forest and GBT Classifier wh
 Required pakages:
 
 - Python version 3.6+
-- `numpy` version 2.0 or later: https://www.numpy.org/
+- `pandas` version 1.2.2 or later: https://pandas.pydata.org/
 - `scikit-learn` version 0.23 or later: https://scikit-learn.org
 - `spark` version 3.1.1 or later: https://spark.apache.org/
 ...
