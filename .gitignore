@@ -131,3 +131,5 @@ dmypy.json
 # Custom
 xgboost4j*
 *.jar
+/vault
+/data/labeled_features2.parquet
