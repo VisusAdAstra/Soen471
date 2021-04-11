@@ -129,5 +129,7 @@ dmypy.json
 .pyre/
 
 # Custom
-code/xgboost4j*
-code/*.jar
+xgboost4j*
+*.jar
+/vault
+/data/labeled_features2.parquet
