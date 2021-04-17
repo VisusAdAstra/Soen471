@@ -133,4 +133,3 @@ xgboost4j*
 *.jar
 /vault
 /data/labeled_features2.parquet
-/data/labeled_features3.parquet
