@@ -6,7 +6,7 @@ Predictive Maintenance: Failure Prediction
 
 ## Abstract
 
-Our goal is to predict when different components of CNC machines will fail. We use time-series telemetry data obtained from sensors which include failure history, maintenance history, machine conditions and features such as the machine’s age and model. This is a supervised learning problem in which we will use examples of failures and periods of healthy operations to discern the difference between the two states. The dataset was published on [GitHub](https://github.com/DeeptiChevvuri/Predictive-Maintenance-Modelling-Datasets) in 2018 with 5 csv files and is around 77 Mb. We will perform EDA and feature engineering to eventually implement 3 algorithms: decision trees, random forests and GBTClassifier. We will then evaluate the results based on different metrics such as accuracy, recall and F1 scores.
+Our goal is to predict when different components of CNC machines will fail. We use time-series telemetry data obtained from sensors which include failure history, maintenance history, machine conditions and features such as the machine’s age and model. This is a supervised learning problem in which we will use examples of failures and periods of healthy operations to discern the difference between the two states. The dataset was published on [GitHub](https://github.com/DeeptiChevvuri/Predictive-Maintenance-Modelling-Datasets) in 2018 with 5 csv files and is around 77 Mb. We will perform EDA and feature engineering to eventually implement 3 algorithms: Isolation Forest, Random Forests and Extreme Gradient Boosting. We will then evaluate the results based on different metrics such as accuracy, recall and F1 scores.
 
 ## I. Introduction
 
@@ -52,8 +52,6 @@ Traditionally, we make use of Decision Tree, Random Forest and GBT Classifier wh
 * <b>Model Training:</b> The purpose is to predict maintenance within the next N cycles and the failure type. Decision Trees are among the most popular and versatile classification methods, used typically for this kind of tasks. Predictive analytics algorithms try to achieve the lowest error possible by either using “boosting” or “bagging”.
 
   * <b>Random Forest Classifier: </b> Random Forest uses bagging mechanism.The individual decision tree might be “weak learners,” multiple trees reduce the variance and bias of a smaller set or single tree.
-  
-  * <b>GBT Classifier: </b> The Gradient Boosted Model produces a prediction model composed of an ensemble of decision trees. Each new tree helps to correct errors made by the previously trained tree.
   
   * <b>Isolation Forest Classifier: </b> Isolation Forest is similar in principle to Random Forest, however, identifies anomalies or outliers rather than profiling normal data points. The idea being that isolated observations, or anomalies, are easier to isolate because there are fewer conditions necessary to distinguish them from the normal cases.
   
