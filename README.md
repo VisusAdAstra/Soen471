@@ -1,6 +1,7 @@
 # Predictive Maintenance: Failure Prediction
 
 [Project Report](https://github.com/VisusAdAstra/Soen471/blob/master/SOEN_471_Project.pdf)
+
 [Project Presentation](https://docs.google.com/presentation/d/1NB8yOmipyjPpFf5A4tE2BFOfsMAct8RylYDdSgPpk3s/edit?usp=sharing)
 
 ## Abstract
